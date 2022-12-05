@@ -451,7 +451,7 @@ function createLinkFilter(type, nameFilter, valueAdd) {
 		else if (type == 'remove') o[nameFilter] = '';
 	}
 
-	var link = 'index.html'; //window.location.href.split('?')[0].replace('#', '');
+	var link = 'index'; //window.location.href.split('?')[0].replace('#', '');
 	var h = false; // Đã có dấu hỏi hay chưa
 
 	// thêm những filter trước sort
