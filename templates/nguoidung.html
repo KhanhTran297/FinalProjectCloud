@@ -1,3 +1,5 @@
+{%extends 'base.html'%}
+{%block content%}
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -7,28 +9,28 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<title>HighTech Store</title>
-	<link rel="shortcut icon" href="img/favicon.ico" />
+	<link rel="shortcut icon" href="./static/img/favicon.ico" />
 
 	<!-- Load font awesome icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
      crossorigin="anonymous">
 
-     <script src="js/Jquery/Jquery.min.js"></script>
+     <script src="./static/js/Jquery/Jquery.min.js"></script>
 
 	<!-- our files -->
 	<!-- css -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/topnav.css">
-	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/taikhoan.css">
-    <link rel="stylesheet" href="css/gioHang.css">
-    <link rel="stylesheet" href="css/nguoidung.css">
-	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="./static/css/style.css">
+	<link rel="stylesheet" href="./static/css/topnav.css">
+	<link rel="stylesheet" href="./static/css/header.css">
+	<link rel="stylesheet" href="./static/css/taikhoan.css">
+    <link rel="stylesheet" href="./static/css/gioHang.css">
+    <link rel="stylesheet" href="./static/css/nguoidung.css">
+	<link rel="stylesheet" href="./static/css/footer.css">
 	<!-- js -->
-	<script src="data/products.js"></script>
-	<script src="js/classes.js"></script>
-    <script src="js/dungchung.js"></script>
-    <script src="js/nguoidung.js"></script>
+	<script src="./static/data/products.js"></script>
+	<script src="./static/js/classes.js"></script>
+    <script src="./static/js/dungchung.js"></script>
+    <script src="./static/js/nguoidung.js"></script>
 
 </head>
 
@@ -37,7 +39,7 @@
 
 	<section>
 		<script> addHeader(); </script>
-        <img src="img/banners/blackFriday.gif" alt="" style="width: 100%;">
+        <img src="./static/img/banners/blackFriday.gif" alt="" style="width: 100%;">
         
         <div class="infoUser"> 
 
@@ -53,6 +55,9 @@
 	<div class="footer"><script>addFooter();</script></div>
 
 	<i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+	<script src="{{url_for('static',filename='banner.css,baohanh.css,chitietsanpham.css,footer.css,gioHang.css,gioithieu.css,header.css,home_product.css,lienhe.css,nguoidung.css,pagination_phantrang.css,reset.css,style.css,taikhoan.css,tintuc.css,topnav.css,trangchu.css,tuyendung.css')}}"></script>
+
 </body>
 
 </html>
+{%endblock%}

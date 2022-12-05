@@ -528,11 +528,11 @@ function addTopNav() {
             </div> <!-- End Social Topnav -->
 
             <ul class="top-nav-quicklink flexContain">
-                <li><a href="index.html"><i class="fa fa-home"></i> Trang chủ</a></li>
-                <li><a href="tintuc.html"><i class="fa fa-newspaper-o"></i> Tin tức</a></li>
-                <li><a href="tuyendung.html"><i class="fa fa-handshake-o"></i> Tuyển dụng</a></li>
-                <li><a href="trungtambaohanh.html"><i class="fa fa-wrench"></i> Bảo hành</a></li>
-                <li><a href="lienhe.html"><i class="fa fa-phone"></i> Liên hệ</a></li>
+                <li><a href="index"><i class="fa fa-home"></i> Trang chủ</a></li>
+                <li><a href="tintuc"><i class="fa fa-newspaper-o"></i> Tin tức</a></li>
+                <li><a href="tuyendung"><i class="fa fa-handshake-o"></i> Tuyển dụng</a></li>
+                <li><a href="trungtambaohanh"><i class="fa fa-wrench"></i> Bảo hành</a></li>
+                <li><a href="lienhe"><i class="fa fa-phone"></i> Liên hệ</a></li>
             </ul> <!-- End Quick link -->
         </section><!-- End Section -->
     </div><!-- End Top Nav  -->`);
@@ -543,8 +543,8 @@ function addHeader() {
     document.write(`        
 	<div class="header group">
         <div class="logo">
-            <a href="index.html">
-                <img src="img/logo.jpg" alt="Trang chủ Smartphone Store" title="Trang chủ Smartphone Store">
+            <a href="index">
+                <img src="./static/img/logo.jpg" alt="Trang chủ Smartphone Store" title="Trang chủ Smartphone Store">
             </a>
         </div> <!-- End Logo -->
 
@@ -571,14 +571,14 @@ function addHeader() {
                         Tài khoản
                     </a>
                     <div class="menuMember hide">
-                        <a href="nguoidung.html">Trang người dùng</a>
+                        <a href="nguoidung">Trang người dùng</a>
                         <a onclick="if(window.confirm('Xác nhận đăng xuất ?')) logOut();">Đăng xuất</a>
                     </div>
 
                 </div> <!-- End Member -->
 
                 <div class="cart">
-                    <a href="giohang.html">
+                    <a href="giohang">
                         <i class="fa fa-shopping-cart"></i>
                         <span>Giỏ hàng</span>
                         <span class="cart-number"></span>

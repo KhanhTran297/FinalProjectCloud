@@ -1,4 +1,5 @@
-
+{%extends 'base.html'%}
+{%block content%}
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -7,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tin tức - HighTech Store</title>
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="shortcut icon" href="./static/img/favicon.ico" />
 
     <!-- Load font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -15,16 +16,16 @@
 
     <!-- our files -->
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/topnav.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/taikhoan.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/tintuc.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/topnav.css">
+    <link rel="stylesheet" href="./static/css/header.css">
+    <link rel="stylesheet" href="./static/css/taikhoan.css">
+    <link rel="stylesheet" href="./static/css/footer.css">
+    <link rel="stylesheet" href="./static/css/tintuc.css">
 
     <!-- js -->
-    <script src="data/products.js"></script>
-	<script src="js/dungchung.js"></script>
+    <script src="./static/data/products.js"></script>
+	<script src="./static/js/dungchung.js"></script>
     <script>
         window.onload = function () {
             khoiTao();
@@ -44,8 +45,8 @@
 
         <div class="body-tintuc">
             <div class="tintuc-info">
-                <a href="https://zingnews.vn/danh-gia-iphone-14-pro-trai-nghiem-moi-chua-thuc-su-khac-biet-post1364219.html" target="_blank">
-                    <img src="img/tintuc/tintuc1.png">
+                <a href="https://zingnews.vn/danh-gia-iphone-14-pro-trai-nghiem-moi-chua-thuc-su-khac-biet-post1364219" target="_blank">
+                    <img src="./static/img/tintuc/tintuc1.png">
                     <h2>Đánh giá IPhone 14 Pro Max , trải nghiệm người dùng </h2>
                 </a>
                 <br/>
@@ -53,7 +54,7 @@
             </div>
             <div class="tintuc-info">
                 <a href="https://tinhte.vn/thread/trai-nghiem-galaxy-z-flip3-uu-va-nhuoc-diem-sau-1-thang-su-dung.3397468/" target="_blank">
-                    <img src="img/tintuc/tintuc2.png">
+                    <img src="./static/img/tintuc/tintuc2.png">
                     <h2>Trải nghiệm Samsung Z Flip 3 và đánh giá </h2>
                 </a>
                 <br/>
@@ -61,7 +62,7 @@
             </div>
             <div class="tintuc-info">
                 <a href="https://hoanghamobile.com/tin-tuc/doanh-so-iphone-14-plus" target="_blank">
-                    <img src="img/tintuc/tintuc3.png">
+                    <img src="./static/img/tintuc/tintuc3.png">
                     <h2>Doanh số iPhone 14 Plus thấp hơn kỳ vọng, nguyên nhân là do đâu?</h2>
                 </a>
                 <br/>
@@ -69,7 +70,7 @@
             </div>
             <div class="tintuc-info">
                 <a href="https://fptshop.com.vn/tin-tuc/danh-gia/5-ly-do-ban-co-the-can-nhac-bo-qua-iphone-13-pro-va-cho-iphone-14-pro-138271" target="_blank">
-                    <img src="img/tintuc/tintuc4.png">
+                    <img src="./static/img/tintuc/tintuc4.png">
                     <h2>5 lý do bạn có thể cân nhắc bỏ qua iPhone 13 Pro và chờ iPhone 14 Pro </h2>
                 </a>
                 <br/>
@@ -77,7 +78,7 @@
             </div>
             <div class="tintuc-info" style="border-bottom: 0;">
                 <a href="https://didongviet.vn/dchannel/danh-gia-samsung-galaxy-s22-ultra/" target="_blank">
-                    <img src="img/tintuc/tintuc5.png" height="148px" width="224px;">
+                    <img src="./static/img/tintuc/tintuc5.png" height="148px" width="224px;">
                     <h2>Chi tiết bài đánh giá Samsung Galaxy S22 Ultra</h2>
                 </a>
                 <br/>
@@ -96,7 +97,10 @@
     </div>
 
     <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+    <script src="{{url_for('static',filename='banner.css,baohanh.css,chitietsanpham.css,footer.css,gioHang.css,gioithieu.css,header.css,home_product.css,lienhe.css,nguoidung.css,pagination_phantrang.css,reset.css,style.css,taikhoan.css,tintuc.css,topnav.css,trangchu.css,tuyendung.css')}}"></script>
 
 </body>
 
 </html>
+{%endblock%}
+

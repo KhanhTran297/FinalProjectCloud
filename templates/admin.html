@@ -1,3 +1,5 @@
+{%extends 'base.html'%}
+{%block content%}
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -7,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title> HighTech Store- Admin</title>
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="shortcut icon" href="./static/img/favicon.ico" />
 
     <!-- Load font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -17,13 +19,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 
     <!-- Our files -->
-    <link rel="stylesheet" href="css/admin/style.css">
-    <link rel="stylesheet" href="css/admin/progress.css">
+    <link rel="stylesheet" href="./static/css/admin/style.css">
+    <link rel="stylesheet" href="./static/css/admin/progress.css">
 
-    <script src="data/products.js"></script>
-    <script src="js/classes.js"></script>
-    <script src="js/dungchung.js"></script>
-    <script src="js/admin.js"></script>
+    <script src="./static/data/products.js"></script>
+    <script src="./static/js/classes.js"></script>
+    <script src="./static/js/dungchung.js"></script>
+    <script src="./static/js/admin.js"></script>
 </head>
 
 <body>
@@ -277,6 +279,7 @@
         </div> <!-- // khach hang -->
     </div> <!-- // main -->
 
+    <script src="{{url_for('static',filename='banner.css,baohanh.css,chitietsanpham.css,footer.css,gioHang.css,gioithieu.css,header.css,home_product.css,lienhe.css,nguoidung.css,pagination_phantrang.css,reset.css,style.css,taikhoan.css,tintuc.css,topnav.css,trangchu.css,tuyendung.css')}}"></script>
 
     <footer>
 
@@ -284,3 +287,4 @@
 </body>
 
 </html>
+{%endblock%}

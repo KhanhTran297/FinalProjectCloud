@@ -1,3 +1,6 @@
+
+{%extends 'base.html'%}
+{%block content%}
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -6,33 +9,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HighTech Store</title>
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="shortcut icon" href="./static/img/favicon.ico" />
 
     <!-- Load font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         crossorigin="anonymous">
 
 	<!-- owl carousel libraries cho hình nhỏ -->
-	<link rel="stylesheet" href="js/owlcarousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="js/owlcarousel/owl.theme.default.min.css">
-	<script src="js/Jquery/Jquery.min.js"></script>
-    <script src="js/owlcarousel/owl.carousel.min.js"></script>
+	<link rel="stylesheet" href="./static/js/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="./static/js/owlcarousel/owl.theme.default.min.css">
+	<script src="./static/js/Jquery/Jquery.min.js"></script>
+    <script src="./static/js/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- our files -->
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/topnav.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/taikhoan.css">
-    <link rel="stylesheet" href="css/trangchu.css">
-    <link rel="stylesheet" href="css/home_products.css">
-    <link rel="stylesheet" href="css/chitietsanpham.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/topnav.css">
+    <link rel="stylesheet" href="./static/css/header.css">
+    <link rel="stylesheet" href="./static/css/taikhoan.css">
+    <link rel="stylesheet" href="./static/css/trangchu.css">
+    <link rel="stylesheet" href="./static/css/home_products.css">
+    <link rel="stylesheet" href="./static/css/chitietsanpham.css">
+    <link rel="stylesheet" href="./static/css/footer.css">
     <!-- js -->
-    <script src="data/products.js"></script>
-    <script src="js/classes.js"></script>
-    <script src="js/dungchung.js"></script>
-    <script src="js/chitietsanpham.js"></script>
+    <script src="./static/data/products.js"></script>
+    <script src="./static/js/classes.js"></script>
+    <script src="./static/js/dungchung.js"></script>
+    <script src="./static/js/chitietsanpham.js"></script>
 </head>
 
 <body>
@@ -44,7 +47,7 @@
 
         <div id="productNotFound" style="min-height: 50vh; text-align: center; margin: 50px; display: none;">
             <h1 style="color: red; margin-bottom: 10px;">Không tìm thấy sản phẩm</h1>
-            <a href="index.html" style="text-decoration: underline;">Quay lại trang chủ</a>
+            <a href="index" style="text-decoration: underline;">Quay lại trang chủ</a>
         </div>
 
         <div class="chitietSanpham" style="margin-bottom: 100px">
@@ -57,27 +60,27 @@
                 <div class="price_sale">
                     <div class="area_price"> </div>
                     <div class="ship" style="display: none;">
-                        <img src="img/chitietsanpham/clock-152067_960_720.png">
+                        <img src="./static/img/chitietsanpham/clock-152067_960_720.png">
                         <div>NHẬN HÀNG TRONG 1 GIỜ</div>
                     </div>
                     <div class="area_promo">
                         <strong>khuyến mãi</strong>
                         <div class="promo">
-                            <img src="img/chitietsanpham/icon-tick.png">
+                            <img src="./static/img/chitietsanpham/icon-tick.png">
                             <div id="detailPromo"> </div>
                         </div>
                     </div>
                     <div class="policy">
                         <div>
-                            <img src="img/chitietsanpham/box.png">
+                            <img src="./static/img/chitietsanpham/box.png">
                             <p>Trong hộp có: Sạc, Tai nghe, Sách hướng dẫn, Cây lấy sim, Ốp lưng </p>
                         </div>
                         <div>
-                            <img src="img/chitietsanpham/icon-baohanh.png">
+                            <img src="./static/img/chitietsanpham/icon-baohanh.png">
                             <p>Bảo hành chính hãng 12 tháng.</p>
                         </div>
                         <div class="last">
-                            <img src="img/chitietsanpham/1-1.jpg">
+                            <img src="./static/img/chitietsanpham/1-1.jpg">
                             <p>1 đổi 1 trong 1 tháng nếu lỗi, đổi sản phẩm tại nhà trong 1 ngày.</p>
                         </div>
                     </div>
@@ -114,7 +117,9 @@
     <script>addContainTaiKhoan();</script>
 
     <div class="footer"><script>addFooter();</script></div>
+    <script src="{{url_for('static',filename='banner.css,baohanh.css,chitietsanpham.css,footer.css,gioHang.css,gioithieu.css,header.css,home_product.css,lienhe.css,nguoidung.css,pagination_phantrang.css,reset.css,style.css,taikhoan.css,tintuc.css,topnav.css,trangchu.css,tuyendung.css')}}"></script>
 
 </body>
 
 </html>
+{%endblock%}

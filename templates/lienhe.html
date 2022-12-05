@@ -1,3 +1,5 @@
+{%extends 'base.html'%}
+{%block content%}
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -6,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Liên hệ - HighTech Store</title>
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="shortcut icon" href="./static/img/favicon.ico" />
 
     <!-- Load font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -14,17 +16,17 @@
 
     <!-- our files -->
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/topnav.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/taikhoan.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/lienhe.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/topnav.css">
+    <link rel="stylesheet" href="./static/css/header.css">
+    <link rel="stylesheet" href="./static/css/taikhoan.css">
+    <link rel="stylesheet" href="./static/css/footer.css">
+    <link rel="stylesheet" href="./static/css/lienhe.css">
 
     <!-- js -->
-    <script src="data/products.js"></script>
-    <script src="js/dungchung.js"></script>
-    <script src="js/lienhe.js"></script>
+    <script src="./static/data/products.js"></script>
+    <script src="./static/js/dungchung.js"></script>
+    <script src="./static/js/lienhe.js"></script>
 
 </head>
 
@@ -113,7 +115,10 @@
     </div>
 
     <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+	<script src="{{url_for('static',filename='banner.css,baohanh.css,chitietsanpham.css,footer.css,gioHang.css,gioithieu.css,header.css,home_product.css,lienhe.css,nguoidung.css,pagination_phantrang.css,reset.css,style.css,taikhoan.css,tintuc.css,topnav.css,trangchu.css,tuyendung.css')}}"></script>
 
 </body>
 
 </html>
+{%endblock%}
+

@@ -1,3 +1,5 @@
+{%extends 'base.html'%}
+{%block content%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,12 +12,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 	 crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" type="text/css" href="css/home_products.css">
+	<link rel="stylesheet" href="./static/css/header.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/home_products.css">
 
-	<script src="data/products.js"></script>
-	<script src="js/classes.js"></script>
-	<script src="js/dungchung.js"></script>
+	<script src="./static/data/products.js"></script>
+	<script src="./static/js/classes.js"></script>
+	<script src="./static/js/dungchung.js"></script>
 
 	<style>
 		* { 
@@ -76,7 +78,7 @@
 			var promoValue = document.getElementById('promoValue').value;
 
 			if(img.indexOf('http') < 0) {
-				img = "img/products/"+ img;	
+				img = "./static/img/products/"+ img;	
 			}
 return {
 	"name": name,
@@ -210,7 +212,9 @@ return {
 			</td>
 		</tr>
 	</table>
+	<script src="{{url_for('static',filename='banner.css,baohanh.css,chitietsanpham.css,footer.css,gioHang.css,gioithieu.css,header.css,home_product.css,lienhe.css,nguoidung.css,pagination_phantrang.css,reset.css,style.css,taikhoan.css,tintuc.css,topnav.css,trangchu.css,tuyendung.css')}}"></script>
 
 </body>
 
 </html>
+{%endblock%}
