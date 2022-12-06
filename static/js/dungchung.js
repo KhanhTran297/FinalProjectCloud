@@ -605,7 +605,7 @@ function addFooter() {
 
     <!-- ============== Footer ============= -->
     <div class="copy-right">
-        <p><a href="index.html">
+        <p><a href="index">
             <span style="color: #eee; font-weight: bold"></span></p>
     </div>`);
 }

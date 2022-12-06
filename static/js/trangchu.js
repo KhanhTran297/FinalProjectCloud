@@ -2,10 +2,10 @@ window.onload = function () {
 	khoiTao();
 
 	// Thêm hình vào banner
-	addBanner("img/banners/banner0.gif", "img/banners/banner0.gif");
+	addBanner("./static/img/banners/banner0.gif", "./static/img/banners/banner0.gif");
 	var numBanner = 9; // Số lượng hình banner
 	for (var i = 1; i <= numBanner; i++) {
-		var linkimg = "img/banners/banner" + i + ".png";
+		var linkimg = "./static/img/banners/banner" + i + ".png";
 		addBanner(linkimg, linkimg);
 	}
 
@@ -32,7 +32,7 @@ window.onload = function () {
 	var company = ["Apple.jpg", "Samsung.jpg", "Oppo.jpg", "Huawei.jpg", "Xiaomi.png",
 		"Realme.png"
 	];
-	for (var c of company) addCompany("img/company/" + c, c.slice(0, c.length - 4));
+	for (var c of company) addCompany("./static/img/company/" + c, c.slice(0, c.length - 4));
 
 	// Thêm sản phẩm vào trang
 	var sanPhamPhanTich
