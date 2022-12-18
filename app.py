@@ -40,6 +40,9 @@ def nguoidung():
 @app.route("/admin.html")
 def admin():
     return render_template("admin.html")
+@app.route("/chitietsanpham")
+def chitietsanpham():
+    return render_template("chitietsanpham.html")
 
 if __name__=='__main__':    
     app.run(debug=True)
