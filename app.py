@@ -37,6 +37,9 @@ def giohang():
 @app.route("/nguoidung")
 def nguoidung():
     return render_template("nguoidung.html")
+@app.route("/admin.html")
+def admin():
+    return render_template("admin.html")
 
 if __name__=='__main__':    
     app.run(debug=True)
