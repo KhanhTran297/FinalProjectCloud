@@ -253,7 +253,7 @@ function addKhungSanPham(tenKhung, color, filter, len, ele) {
 
 	// thêm nút xem tất cả rồi đóng tag
 	s += `	</div>
-			<a class="xemTatCa" href="index.html?` + filter.join('&') + `" style="` + borderA + `">
+			<a class="xemTatCa" href="index?` + filter.join('&') + `" style="` + borderA + `">
 				Xem tất cả ` + spResult.length + ` sản phẩm
 			</a>
 		</div> <hr>`;
